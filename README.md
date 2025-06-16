@@ -1,5 +1,5 @@
 # 使用方法
-1.创建数据库,并运行
+#### 1.创建数据库,并运行
 ```sql
 -- 用户表
 CREATE TABLE users (
@@ -42,3 +42,5 @@ CREATE TABLE submissions (
     FOREIGN KEY (problem_id) REFERENCES problems(id)
 );
 ```
+#### 2.在includes/db.php输入数据库信息
+#### 3.打开public/(index.php)
