@@ -44,3 +44,6 @@ CREATE TABLE submissions (
 ```
 #### 2.在includes/db.php输入数据库信息
 #### 3.打开public/(index.php)
+
+# 测试链接
+[点击这里](https://jsl.rf.gd/public/)
