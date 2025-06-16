@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
     
     if (loginUser($username, $password)) {
-        header('Location: /');
+        header('Location: /public/');
         exit;
     } else {
         $error = '用户名或密码错误';
@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div class="alert alert-danger"><?= $error ?></div>
                         <?php endif; ?>
                         
-                        <form method="POST" action='/public/'>
+                        <form method="POST">
                             <div class="mb-3">
                                 <label class="form-label">用户名</label>
                                 <input type="text" class="form-control" name="username" required>
